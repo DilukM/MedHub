@@ -1,7 +1,7 @@
 # MedHub
-Team ID: 05
-Team Name: Cyborgs
-Team University: CINEC
+<b>Team ID: 05
+<b>Team Name: Cyborgs
+<b>Team University: CINEC
 
 
 <b>Team Members:</b>
