@@ -1,8 +1,12 @@
 # MedHub
-#Project Maintainers
+<b>Project Maintainers</b>
 <br>Diluk Mihiranga
-#Andrea Okeena 
-#Udara Madusanka
-#Ishani Sewmini
+<br>Andrea Okeena 
+<br>Udara Madusanka
+<br>Ishani Sewmini
 
-Technology
+<b>Technology</b>
+<br>HTML
+<br>CSS
+<br>JAVASCRIPT
+<br>Firebase
