@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/add.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="addNewCategory">
+        <form class="add-details" action="" method="post" enctype="">
+
+        <fieldset id="selectdrugname">
+                <label for="selectdrugname">Select Drug Name</label>
+                <input required type="text" name="selectdrugname" id="selectdrugname" placeholder="Ex: Amoxiline">
+            </fieldset>
+
+            <fieldset id="manufacturer">
+                <label for="manufacturer">Manufacturer</label>
+                <input required type="text" name="manufacturer" id="manufacturer" placeholder="Ex: Germany">
+            </fieldset>
+
+            <fieldset id="supplier">
+                <label for="supplier">Supplier</label>
+                <input required type="text" name="supplier" id="supplier" placeholder="Ex: Med Com">
+            </fieldset>
+
+            <fieldset id="ndc">
+                <label for="ndc">NDC</label>
+                <input required type="text" name="ndc" id="ndc" placeholder="Ex: 123456">
+            </fieldset>
+
+            <fieldset id="expire">
+                <label for="expire">Select Expiration Date</label>
+                <input type="text" name="expire" id="expire" placeholder="Ex : 2023/01/03">
+            </fieldset>
+
+            <fieldset id="quantity">
+                <label for="quantity">Quantity on Hand</label>
+                <input type="text" name="quantity" id="quantity" placeholder="Ex : 1000">
+            </fieldset>
+        </form>
+        <button name="AddDrug" id="AddDrug">Add Drug</button>
+    </div>
+
+    <script src="./js/add.js"></script>
+</body>
+</html>

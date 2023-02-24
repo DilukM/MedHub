@@ -1,0 +1,80 @@
+.adddrug {
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .add-details {
+    display: grid;
+    grid-template-areas:
+      "selectdrugname manufacturer supplier ndc "
+      "expire quantity price ...";
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0em 0.2em;
+    margin: 10px;
+    height: auto;
+    width: 100%;
+    line-height: 20px;
+  }
+  
+  .add-details textarea {
+    height: calc(100% - 1.5em);
+  }
+  
+  .add-details input:not([type="radio"]):not([type="checkbox"]),
+  .add-details textarea,
+  .add-details select {
+    width: 100%;
+    border: 1px solid #03c320;
+    padding: 0.5em;
+    margin: 0.5em 0;
+  }
+  .add-details label {
+    display: block;
+    font-size: 1rem;
+  }
+  
+  fieldset {
+    border: 0;
+  }
+  
+  #selectdrugname {
+    grid-area: selectdrugname;
+    width: 90%;
+  }
+  #manufacturer {
+    grid-area: manufacturer;
+    width: 90%;
+  }
+  #supplier {
+    grid-area: supplier;
+    width: 90%;
+  }
+  #ndc {
+    grid-area: ndc;
+    width: 90%;
+  }
+  #expire {
+    grid-area: expire;
+    width: 90%;
+  }
+  #quantity {
+    grid-area: quantity;
+    width: 90%;
+  }
+    #price {
+    grid-area: price;
+    width: 90%;
+  }
+
+  button {
+    background-color: #03c320;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px;
+  }
+  

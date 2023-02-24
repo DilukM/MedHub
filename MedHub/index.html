@@ -4,52 +4,219 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MED HUB - Duothon3.0</title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <form action="">
-        <div class="container">
-            <H1>Register</H1>
-<!-- 
-            <label for="pname">Pharmacy name</label>
-            <input type="text" name="Pname" id="Pname"> -->
-
-            <label for="email">Email</label>
-            <input type="text" placeholder="Enter Email" name="email" id="email" required>
-
-            <!-- <label for="address">Address</label> -->
-            <!-- <input type="text" name="address" id="address">
-
-            <label for="phone">Phone</label>
-            <input type="text" name="phone" id="phone">
-
-            <label for="Plicense">Pharmacy License number</label>
-            <input type="text" name="Plicense" id="Plicense"> -->
-            
-            <label for="password">Password</label>
-            <input type="password" placeholder="Password" name="psw" id="psw" required>
-
-            <!-- <label for="Cpsw">Confirm password</label>
-            <input type="text" name="Cpsw" id="Cpsw"> -->
-
-            <button type="button" id="submitData" name="submitData" class="registerbtn">Signup</button>
+    <!-- header section starts -->
+    <header class="header">
+        <div class="user">
+            <img src="logo.png" alt="">
         </div>
 
-        <div class="container signin">
-            <p>alredy have an account? <a href="#">Sign in</a>.</p>
+        
+
+        <nav class="navbar">
+            <a href="#inventory">Inventory</a>
+            <a href="#about">Profile</a>
+            <a href="login.html">Logout</a>
+        </nav>
+
+    </header>
+    <!-- header section ends -->
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <!-- theme toggler -->
+    <!-- <div id="theme-toggler" class="fas fa-moon"></div> -->
+
+    <div class="search">
+        <form action="#">
+            <input type="text"
+                placeholder=" Search Items"
+                name="search" id="mySearch" onkeyup="myFunction()">
+            <button>
+                <i class="fa fa-search"
+                    style="font-size: 18px;">
+                </i>
+            </button>
+        </form>
+    </div>
+
+    <!-- home section starts -->
+
+    <section class="inventory" id="inventory">
+        <div class="top">
+            <h1 class="heading1"> <h1>Inventory</h1>
+        <button class="btn-new">
+            <a href="add.html">Add New</a>
+        </button>
         </div>
-        <div class="signin">
-            <form action="">
-                <input type="text" name="Iemail" id="Iemail">
-                <input type="password" name="Ipassword" id="Ipassword">
-
-                <button type="button" id="signin" name="signin" class="signinbtn">Signin</button>
-            </form>
+            <table style="width:100%">
+            <tr>
+                <th>ID</th>
+                <th>Drug Name</th>
+                <th>Manufacturer</th>
+                <th>Supplier</th>
+                <th>NDC</th>
+                <th>Expiration Date</th>
+                <th>Quantity</th>
+                <th>Unit Price</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td>med001</td>
+                <td>VitaminC</td>
+                <td>Germany</td>
+                <td>MedCom</td>
+                <td>123456789</td>
+                <td>2023-12-31</td>
+                <td>100</td>
+                <td>RS.10</td>
+                <td><button type="button" class="btn btn-primary"><a href="drug.html">Edit</a></button></td>
+            </tr>
+            <tr>
+                <td>med002</td>
+                <td>Amoxiline</td>
+                <td>Mexico</td>
+                <td>MedCom</td>
+                <td>123456789</td>
+                <td>2023-12-31</td>
+                <td>100</td>
+                <td>RS.10</td>
+                <td><button type="button" class="btn btn-primary">Edit</button></td>
+            </tr>
+            <tr>
+                <td>med002</td>
+                <td>Amoxiline</td>
+                <td>Mexico</td>
+                <td>MedCom</td>
+                <td>123456789</td>
+                <td>2023-12-31</td>
+                <td>100</td>
+                <td>RS.10</td>
+                <td><button type="button" class="btn btn-primary">Edit</button></td>
+            </tr>
+            <tr>
+                <td>med002</td>
+                <td>Amoxiline</td>
+                <td>Mexico</td>
+                <td>MedCom</td>
+                <td>123456789</td>
+                <td>2023-12-31</td>
+                <td>100</td>
+                <td>RS.10</td>
+                <td><button type="button" class="btn btn-primary">Edit</button></td>
+            </tr>
+            </table>
+        <!-- <div class="content">
+            <h3>Sewmini Jayaweera</h3>
+            <p>I am a front-end developer</p>
+            <a href="Resume - J. I. Sewmini Jayaweera.pdf" download="Resume - J. I. Sewmini Jayaweera.pdf" class="btn">download CV</a>
         </div>
 
-    </form>
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div> -->
+
+    </section>
+
+    <!-- home section ends -->
+    
+    <!-- about section starts -->
+
+    <section class="about" id="about">
+        <h1 class="heading"> Profile </h1>
+
+        <h2 class="sub-heading">Pharmacy Information</h2>
+
+        <form class="add-details" action="" method="post" enctype="">
+
+        <fieldset id="pharmacy">
+                <label for="pharmacy">Pharmacy's Name</label>
+                <input required type="text" name="pharmacy" id="pharmacy" placeholder="Ex: LankaCare">
+            </fieldset>
+
+            <fieldset id="address">
+                <label for="address">Address</label>
+                <input required type="text" name="address" id="address" placeholder="Ex: N0:15/3, Temple Rd: Colombo">
+            </fieldset>
+
+            <fieldset id="phone">
+                <label for="phone">Phone Number</label>
+                <input required type="text" name="phone" id="phone" placeholder="Ex: 0771723546">
+            </fieldset>
+
+            <fieldset id="email">
+                <label for="email">E-mail</label>
+                <input type="text" name="email" id="email" placeholder="Ex : medhub@gmail.com">
+            </fieldset>
+
+            <fieldset id="web">
+                <label for="web">website</label>
+                <input type="text" name="web" id="web" placeholder="Ex : www.Med-Hub.com">
+            </fieldset>
+
+            <fieldset id="hours">
+                <label for="hours">Openning Hours</label>
+                <input type="text" name="hours" id="hours" placeholder="Ex : RS.10.00">
+            </fieldset>
+
+            <fieldset id="license">
+                <label for="license">Pharmacy License</label>
+                <input type="text" name="license" id="license" placeholder="Ex : www.healthcare.com">
+            </fieldset>
+        </form>
+
+        <h2 class="sub-heading">Owner Information</h2>
+
+        <form class="add-owner-details" action="" method="post" enctype="">
+
+        <fieldset id="name">
+                <label for="name">Owner Name</label>
+                <input required type="text" name="name" id="name" placeholder="Ex: Nishan Dammika">
+            </fieldset>
+
+            <fieldset id="address">
+                <label for="address">Owner Address</label>
+                <input required type="text" name="address" id="address" placeholder="Ex: N0:15/3, Temple Rd: Colombo">
+            </fieldset>
+
+            <fieldset id="phone">
+                <label for="phone">Owner Phone Number</label>
+                <input required type="text" name="phone" id="phone" placeholder="Ex: 0771723546">
+            </fieldset>
+
+            <fieldset id="email">
+                <label for="email">Owner E-mail</label>
+                <input type="text" name="email" id="email" placeholder="Ex : dammika12@gmail.com">
+            </fieldset>
+
+            <fieldset id="nic">
+                <label for="nic">Owner NIC</label>
+                <input type="text" name="nic" id="nic" placeholder="Ex : 99552371V">
+            </fieldset>
+        </form>
+        <button>Save</button>
+    </section>
+
+    <!-- about section ends -->
 
 
-    <script type="module" src="./js/login.js"></script>
+    <div class="credits"> Copyright <span>Cyborgs@101</span> 
+        | all rights reserved </div>
+    
+    <!-- custom js file -->
+    <script src="js/script.js"></script>
 </body>
 </html>
