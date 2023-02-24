@@ -5,10 +5,10 @@
 
 
 <b>Team Members:</b>
-<br>Diluk Mihiranga @dilukM
-<br>Andrea Okeena @AndyKeena
-<br>Udara Madusanka @MADUDARA
-<br>Ishani Sewmini @SewminiJ
+<br>Diluk Mihiranga <a href="https://github.com/DilukM/">@DilukM</a>
+<br>Andrea Okeena <a href="https://github.com/AndyKeena/">@AndyKeena</a>
+<br>Udara Madusanka <a href="https://github.com/MADUDARA/">@MADUDARA</a>
+<br>Ishani Sewmini <a href="https://github.com/SewminiJ/">@SewminiJ</a>
 
 <b>Technology</b>
 <br>HTML
